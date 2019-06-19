@@ -1,0 +1,19 @@
+<hello name="{{ name }}"></hello>
+<p>
+	Start editing to see some magic happen :)
+</p>
+<button (click)="up()">Increase data value</button>
+<button (click)="change()">Change data</button>
+<p></p>
+<div (click)="onClick()">
+<button (click)="logDataBinding()">Log it: {{dataBindingIsLogged}}</button>
+<app-data-binding [dummyData]=service.dummyData [log]=dataBindingIsLogged></app-data-binding>
+<button (click)="logDataBindingOnPush()">Log it: {{dataBindingOnPushIsLogged}}</button>
+<app-data-binding-on-push [dummyData]=service.dummyData [log]=dataBindingOnPushIsLogged></app-data-binding-on-push>
+<button (click)="logFunctionBinding()" >Log it: {{functionBindingIsLogged}}</button>
+<app-function-binding [log]=functionBindingIsLogged></app-function-binding>
+<button (click)="logFunctionBindingOnPush()">Log it: {{functionBindingOnPushIsLogged}}</button>
+<app-function-binding-on-push  [log]=functionBindingOnPushIsLogged></app-function-binding-on-push>
+<button (click)="logPurePipe()" >Log it: {{purePipeIsLogged}}</button>
+<app-pure-pipe [log]=purePipeIsLogged></app-pure-pipe>
+</div>
