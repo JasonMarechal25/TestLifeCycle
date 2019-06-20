@@ -19,8 +19,8 @@ export class PurePipeComponent implements OnInit {
   constructor(private service: DataService) { }
 
   data() {
-    if (! this.log) return;
-    console.log('=> PurePipeComponent', 'fetch data');
+    if (this.log)
+      console.log('=> PurePipeComponent', 'fetch data');
     return this.service.dummyData.dummyValue;
   }
 

@@ -1,10 +1,11 @@
-import { Component, OnInit, Input, } from '@angular/core';
+import { Component, OnInit, Input, ChangeDetectionStrategy} from '@angular/core';
 import { Data, DataService }  from '../data/data.service';
 
 @Component({
   selector: 'app-observe',
   templateUrl: './observe.component.html',
-  styleUrls: ['./observe.component.css']
+  styleUrls: ['./observe.component.css'],
+  //changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ObserveComponent implements OnInit {
 
@@ -13,8 +14,8 @@ export class ObserveComponent implements OnInit {
   @Input() log: boolean;
 
   data() {
-    if (! this.log) return;
-    console.log('ObserveComponent', 'fetch data');
+    if (this.log)
+       console.log('ObserveComponent', 'fetch data');
     return this.service.dummyData.dummyValue;
   }
 

@@ -18,4 +18,6 @@
 <app-pure-pipe [log]=purePipeIsLogged></app-pure-pipe>
 <button (click)="logObserve()" >Log it: {{observIsLogged}}</button>
 <app-observe [log]="observIsLogged"></app-observe>
+<button (click)="logObserveOnPush()" >Log it: {{observOnPushIsLogged}}</button>
+<app-observe-on-push [log]="observOnPushIsLogged"></app-observe-on-push>
 </div>

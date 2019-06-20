@@ -12,10 +12,11 @@ import { DataBindingOnPushComponent } from './data-binding-on-push/data-binding-
 import { PurePipeComponent, TestPurePipe } from './pure-pipe/pure-pipe.component';
 import { ObserveComponent } from './observe/observe.component';
 import { CommonModule} from '@angular/common';
+import { ObserveOnPushComponent } from './observe-on-push/observe-on-push.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule, CommonModule ],
-  declarations: [ AppComponent, HelloComponent, DataBindingComponent, FunctionBindingComponent, FunctionBindingOnPushComponent, DataBindingOnPushComponent, PurePipeComponent, TestPurePipe, ObserveComponent ],
+  declarations: [ AppComponent, HelloComponent, DataBindingComponent, FunctionBindingComponent, FunctionBindingOnPushComponent, DataBindingOnPushComponent, PurePipeComponent, TestPurePipe, ObserveComponent, ObserveOnPushComponent ],
   bootstrap:    [ AppComponent ],
   providers: [DataService]
 })

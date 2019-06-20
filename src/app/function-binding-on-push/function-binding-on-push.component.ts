@@ -12,8 +12,8 @@ export class FunctionBindingOnPushComponent implements OnInit {
   constructor(private service: DataService) { }
 
   data() {
-    if (! this.log) return;
-    console.log('FunctionBindingOnPushComponent', 'fetch data');
+    if (this.log)
+      console.log('FunctionBindingOnPushComponent', 'fetch data');
     return this.service.dummyData.dummyValue;
   }
 

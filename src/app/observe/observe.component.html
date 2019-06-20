@@ -1,3 +1,4 @@
 <p>
 Subscription to observable: {{(service.dataChanged | async)?.dummyValue}}
 </p>
+<div *ngIf="service.dataChanged | async">{{data()}} </div>

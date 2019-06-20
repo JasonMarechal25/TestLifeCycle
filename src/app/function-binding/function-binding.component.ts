@@ -12,8 +12,8 @@ export class FunctionBindingComponent implements OnInit {
   constructor(private service: DataService) { }
 
   data() {
-    if (! this.log) return;
-    console.log('=> FunctionBindingComponent', 'fetch data');
+    if (this.log)
+       console.log('FunctionBindingComponent', 'fetch data');
     return this.service.dummyData.dummyValue;
   }
 
