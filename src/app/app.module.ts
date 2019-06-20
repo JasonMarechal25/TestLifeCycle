@@ -10,10 +10,11 @@ import { FunctionBindingComponent } from './function-binding/function-binding.co
 import { FunctionBindingOnPushComponent } from './function-binding-on-push/function-binding-on-push.component';
 import { DataBindingOnPushComponent } from './data-binding-on-push/data-binding-on-push.component';
 import { PurePipeComponent, TestPurePipe } from './pure-pipe/pure-pipe.component';
+import { ObserveComponent } from './observe/observe.component';
 
 @NgModule({
   imports:      [ BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, DataBindingComponent, FunctionBindingComponent, FunctionBindingOnPushComponent, DataBindingOnPushComponent, PurePipeComponent, TestPurePipe ],
+  declarations: [ AppComponent, HelloComponent, DataBindingComponent, FunctionBindingComponent, FunctionBindingOnPushComponent, DataBindingOnPushComponent, PurePipeComponent, TestPurePipe, ObserveComponent ],
   bootstrap:    [ AppComponent ],
   providers: [DataService]
 })

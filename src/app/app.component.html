@@ -16,4 +16,6 @@
 <app-function-binding-on-push  [log]=functionBindingOnPushIsLogged></app-function-binding-on-push>
 <button (click)="logPurePipe()" >Log it: {{purePipeIsLogged}}</button>
 <app-pure-pipe [log]=purePipeIsLogged></app-pure-pipe>
+<button (click)="logObserve()" >Log it: {{observIsLogged}}</button>
+<app-observe [log]="observIsLogged"></app-observe>
 </div>

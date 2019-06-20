@@ -13,6 +13,7 @@ export class AppComponent {
   functionBindingIsLogged = true;
   functionBindingOnPushIsLogged = true;
   purePipeIsLogged = true;
+  observIsLogged = true;
 
   constructor(public service: DataService) {
     this.service.dummyData.dummyValue = 3;
@@ -49,6 +50,10 @@ export class AppComponent {
 
     logPurePipe() {
     this.purePipeIsLogged = !this.purePipeIsLogged;
+  }
+
+  logObserve() {
+    this.observIsLogged = !this.observIsLogged;
   }
 
 
