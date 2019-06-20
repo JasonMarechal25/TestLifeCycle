@@ -5,7 +5,7 @@ import { Data, DataService }  from '../data/data.service';
 export class TestPurePipe implements PipeTransform {
   transform(value: number): number {
     console.log('! => pipeTransformation');
-    return value+1;
+    return value;
   }
 }
 

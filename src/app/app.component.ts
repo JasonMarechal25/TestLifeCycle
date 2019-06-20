@@ -21,11 +21,11 @@ export class AppComponent {
 
   public up() {
     console.log('Up');
-    this.service.dummyData.dummyValue++;
+    this.service.incrementData();
   }
 
   change() {
-    this.service.dummyData = new Data();
+    this.service.changeData();
   }
 
   onClick() {
