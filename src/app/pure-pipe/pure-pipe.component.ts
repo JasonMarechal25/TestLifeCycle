@@ -3,7 +3,8 @@ import { Data, DataService }  from '../data/data.service';
 
 @Pipe({name: 'pipeIt', pure: true})
 export class TestPurePipe implements PipeTransform {
-  transform(value: number): number {
+  transform(value: number, log: boolean): number {
+    if (log)
     console.log('! => pipeTransformation');
     return value;
   }

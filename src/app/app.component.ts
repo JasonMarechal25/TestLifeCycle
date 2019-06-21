@@ -8,13 +8,13 @@ import { Data, DataService } from './data/data.service';
 })
 export class AppComponent {
   name = 'Angular';
-  dataBindingIsLogged = true;
-  dataBindingOnPushIsLogged = true;
-  functionBindingIsLogged = true;
-  functionBindingOnPushIsLogged = true;
-  purePipeIsLogged = true;
-  observIsLogged = true;
-  observOnPushIsLogged = true;
+  dataBindingIsLogged = false;
+  dataBindingOnPushIsLogged = false;
+  functionBindingIsLogged = false;
+  functionBindingOnPushIsLogged = false;
+  purePipeIsLogged = false;
+  observIsLogged = false;
+  observOnPushIsLogged = false;
 
   constructor(public service: DataService) {
     this.service.dummyData.dummyValue = 3;

@@ -1,4 +1,1 @@
-<p>
-Subscription to observable and onPush: {{(service.dataChanged | async)?.dummyValue}}
-</p>
-<div *ngIf="service.dataChanged | async">{{data()}} </div>
+<div *ngIf="service.dataChanged | async">Subscription to observable and onPush: {{data()}} </div>

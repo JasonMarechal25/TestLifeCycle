@@ -33,6 +33,7 @@ console.log('FunctionBindingComponent', 'ngDoCheck');
   }
 
   ngAfterContentInit() {
+    if (! this.log) return;
 console.log('FunctionBindingComponent', 'ngAfterContentInit');
   }
 
